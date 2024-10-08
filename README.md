@@ -1,5 +1,11 @@
-# Шаблон каталога курса для студентов
+---
+header-includes: 
+ - \usepackage[utf8]{inputenc}
+ - \usepackage{fontspec}
+---
+begin{document}
 
+# Шаблон каталога курса для студентов
 ## Скачать репозиторий
 
 git clone --recursive https://github.com/yamadharma/course-directory-student-template.git
@@ -108,3 +114,4 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
     git commit -am 'feat(main): make course structure'
     git push
     ```
+\end{document}
