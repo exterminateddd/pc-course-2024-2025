@@ -1,11 +1,6 @@
-\documentclass{article}
-
-\usepackage[russian, english]{babel}
-
-\babelfont{rm}{Droid Serif}
-\babelfont{sf}{Droid Sans}
-
-begin{document}
+---
+mainfont: Nimbus Roman
+---
 
 # Шаблон каталога курса для студентов
 ## Скачать репозиторий
@@ -116,4 +111,4 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
     git commit -am 'feat(main): make course structure'
     git push
     ```
-\end{document}
+
