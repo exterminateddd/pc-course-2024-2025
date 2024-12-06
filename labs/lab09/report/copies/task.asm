@@ -26,9 +26,7 @@ call atoi
 
 ; имеем аргумент x в eax
 ; требуется сделать из него 4x-3
-mov ebx, 4
-mul ebx    ; eax := eax * 4 = 4x
-sub eax, 3 ; eax := 4x - 3
+call _calc
 
 add esi, eax ; esi := esi + 4x-3
 mov eax, esi
@@ -41,3 +39,9 @@ call sprint
 mov eax, esi ; записываем сумму в регистр `eax`
 call iprintLF ; печать результата
 call quit ; завершение программы
+
+_calc: ; имеем в eax значение х
+mov ebx, 4
+mul ebx       ; eax = 4x
+sub eax, 3    ; eax = 4x-3
+ret       ; выходим из подпрограммы
